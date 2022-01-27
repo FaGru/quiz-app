@@ -11,15 +11,30 @@
   <body class="create">
     <div class="app-grid text-center">
       <h1>Create a Question</h1>
-      <form action="" class="app-grid__scrollarea h-100vh " autocomplete="off">
+      <form action="" class="app-grid__scrollarea h-100vh" autocomplete="off">
         <section class="create__section-wrap">
           <label for="add-question">Add question</label>
-          <output data-js="create__question-output">200</output>
-          <textarea id="add-question" data-js="create__add-question" type="text" name="add-question" cols="35" rows="7" ></textarea>
+          <output data-js="create__add-question-output">250 sign's left</output>
+          <textarea
+            id="add-question"
+            data-js="create__add-question"
+            type="text"
+            name="add-question"
+            cols="35"
+            rows="7"
+          ></textarea>
         </section>
         <section class="create__section-wrap">
           <label for="add-answer">Add answer</label>
-          <textarea id="add-answer" type="text" name="add-answer" cols="30" rows="5"></textarea>
+          <output data-js="create__add-anwser-output">120 sign's left</output>
+          <textarea
+            data-js="create__add-anwser"
+            id="add-answer"
+            type="text"
+            name="add-answer"
+            cols="30"
+            rows="5"
+          ></textarea>
         </section>
         <section class="create__section-wrap">
           <label for="add-tags">Add tags (divided by comma) </label>
@@ -28,15 +43,33 @@
         <button class="create__submit">submit</button>
       </form>
       <nav class="nav classic-wrap">
-        <a href="./index.html"><img src="../../images/home.svg" height="40" width="40" alt="home button" /></a>
+        <a href="./index.html"
+          ><img
+            src="../../images/home.svg"
+            height="40"
+            width="40"
+            alt="home button"
+        /></a>
         <a href="./bookmarks.html"
-          ><img src="../../images/bookmark 20x20px.svg" height="40" width="40" alt="bookmark button"
+          ><img
+            src="../../images/bookmark-20x20px.svg"
+            height="40"
+            width="40"
+            alt="bookmark button"
         /></a>
         <a href="./create.html" class="nav--position"
-          ><img src="../../images/create.svg" height="40" width="40" alt="create button"
+          ><img
+            src="../../images/create.svg"
+            height="40"
+            width="40"
+            alt="create button"
         /></a>
         <a href="./profile.html"
-          ><img src="../../images/profil 2.svg" height="40" width="40" alt="my profil button"
+          ><img
+            src="../../images/profil 2.svg"
+            height="40"
+            width="40"
+            alt="my profil button"
         /></a>
       </nav>
     </div>
