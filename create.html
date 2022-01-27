@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App / create</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./index.js"></script>
   </head>
   <body class="create">
     <div class="app-grid text-center">
@@ -13,7 +14,8 @@
       <form action="" class="app-grid__scrollarea h-100vh " autocomplete="off">
         <section class="create__section-wrap">
           <label for="add-question">Add question</label>
-          <textarea id="add-question" type="text" name="add-question" cols="35" rows="7" ></textarea>
+          <output data-js="create__question-output">200</output>
+          <textarea id="add-question" data-js="create__add-question" type="text" name="add-question" cols="35" rows="7" ></textarea>
         </section>
         <section class="create__section-wrap">
           <label for="add-answer">Add answer</label>

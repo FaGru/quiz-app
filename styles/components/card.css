@@ -18,8 +18,8 @@
   border-style: none;
   background-color: transparent;
   z-index: 1;
+  
 }
-
 .card__show-answer {
   list-style: none;
   border: 1px solid black;
@@ -38,3 +38,4 @@
   margin: 0;
   list-style: none;
 }
+
