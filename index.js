@@ -7,16 +7,8 @@ const textHide = 'hide answer';
 const textShow = 'show answer';
 
 showAnswerButton?.addEventListener('click', () => {
-  // if (showAnswerButton.textContent === textShow) {
-  //   showAnswerButton.textContent = textHide;
-  // } else {
-  //   showAnswerButton.textContent = textShow;
-  // }
-
   // ternary operator
-  showAnswerButton.textContent =
-    //                           condition      ? true     : false
-    showAnswerButton.textContent === textShow ? textHide : textShow;
+  showAnswerButton.textContent = showAnswerButton.textContent === textShow ? textHide : textShow;
 });
 
 // bookmark
