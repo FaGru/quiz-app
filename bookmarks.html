@@ -12,10 +12,11 @@
     <div class="app-grid">
       <h1>Bookmarks</h1>
       <main class="classic-wrap">
-        <article class="card">
+        <article data-js="card" class="card">
           <h2>Question</h2>
           <button class="card__bookmark">
             <img
+              data-js="card__bookmark"
               src="../../images/bookmark-20x20px.svg"
               alt="bookmark button"
               height="40"
@@ -28,7 +29,9 @@
             erat, sed diam voluptua.
           </p>
           <details>
-            <summary class="card__show-answer">show answer</summary>
+            <summary data-js="card__show-answer" class="card__show-answer">
+              show answer
+            </summary>
             <p>Lorem ipsum dolor sit amet</p>
           </details>
           <ul role="list" class="card__tag-list no-list-style classic-wrap">

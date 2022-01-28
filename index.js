@@ -1,7 +1,14 @@
-import { bookmarks } from './js/bookmarks.js';
-import { showHideAnswer } from './js/card-show-hide-answer.js';
-import { createCounter } from './js/create-counter.js';
+import Card from './js/Card.js';
+import Form from './js/Form.js';
 
-bookmarks();
-showHideAnswer();
-createCounter();
+const allCardElements = document.querySelectorAll('[data-js="card"]');
+
+allCardElements.forEach(cardElement => {
+  Card(cardElement);
+});
+
+const allFormElements = document.querySelectorAll('[data-js="create__form"]');
+
+allFormElements.forEach(formElement => {
+  Form(formElement);
+});
