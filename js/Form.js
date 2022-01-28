@@ -24,6 +24,6 @@ export default function Form(formElement) {
   const counterTwo = 120;
   addAnswerInput?.addEventListener('input', () => {
     const lenght = addAnswerInput.value.length;
-    addAnswerOutput.value = counterTwo - lenght + ' characters left'
+    addAnswerOutput.value = counterTwo - lenght + ' characters left';
   });
 }
