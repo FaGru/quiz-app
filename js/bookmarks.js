@@ -5,13 +5,11 @@ export function bookmarks() {
 
   cardBookmark.addEventListener('click', () => {
     if (!cardIsBookmarked) {
-    cardBookmark.src = '../../images/bookmark-20x20px.svg';
+      cardBookmark.src = '../../images/bookmark-20x20px.svg';
       cardIsBookmarked = true;
     } else {
-    cardBookmark.src = '../../images/no-bookmark.svg';
+      cardBookmark.src = '../../images/no-bookmark.svg';
       cardIsBookmarked = false;
     }
-
-
   });
 }
