@@ -9,7 +9,7 @@ export default function Form(formElement) {
   );
   const counter = 250;
 
-  addQuestionInput?.addEventListener('input', () => {
+  addQuestionInput.addEventListener('input', () => {
     const length = addQuestionInput.value.length;
     addQuestionOutput.value = counter - length + ' characters left';
   });
@@ -22,7 +22,7 @@ export default function Form(formElement) {
     '[data-js="create__add-anwser-output"]'
   );
   const counterTwo = 120;
-  addAnswerInput?.addEventListener('input', () => {
+  addAnswerInput.addEventListener('input', () => {
     const lenght = addAnswerInput.value.length;
     addAnswerOutput.value = counterTwo - lenght + ' characters left';
   });
