@@ -18,7 +18,6 @@
   border-style: none;
   background-color: transparent;
   z-index: 1;
-  
 }
 .card__show-answer {
   list-style: none;
@@ -38,4 +37,3 @@
   margin: 0;
   list-style: none;
 }
-

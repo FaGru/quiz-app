@@ -1,6 +1,6 @@
-import { bookmarks } from'./js/bookmarks.js';
+import { bookmarks } from './js/bookmarks.js';
 
-bookmarks ();
+bookmarks();
 
 // show-hide card answer
 const showAnswerButton = document.querySelector(
@@ -15,8 +15,6 @@ showAnswerButton?.addEventListener('click', () => {
   showAnswerButton.textContent =
     showAnswerButton.textContent === textShow ? textHide : textShow;
 });
-
-
 
 // create
 //counter Add Question
@@ -34,10 +32,9 @@ addQuestionInput.addEventListener('input', () => {
   addQuestionOutput.value = counter - length + " sign's left";
 });
 
-
 // counnter add answer
 const addAnswerInput = document.querySelector('[data-js="create__add-anwser"]');
-const addAnswerOutput = document.querySelector('[data-js="create__add-anwser-output"]')
-addAnswerInput.addEventListener('input', () => {
-
-})
+const addAnswerOutput = document.querySelector(
+  '[data-js="create__add-anwser-output"]'
+);
+addAnswerInput.addEventListener('input', () => {});
