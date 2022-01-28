@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App / create</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <script type="module" defer src="./index.js"></script>
   </head>
   <body class="create">
     <div class="app-grid text-center">
@@ -13,8 +14,10 @@
       <form action="" class="app-grid__scrollarea h-100vh" autocomplete="off">
         <section class="create__section-wrap">
           <label for="add-question">Add question</label>
+          <output data-js="create__add-question-output">250 sign's left</output>
           <textarea
             id="add-question"
+            data-js="create__add-question"
             type="text"
             name="add-question"
             cols="35"
@@ -23,7 +26,9 @@
         </section>
         <section class="create__section-wrap">
           <label for="add-answer">Add answer</label>
+          <output data-js="create__add-anwser-output">120 sign's left</output>
           <textarea
+            data-js="create__add-anwser"
             id="add-answer"
             type="text"
             name="add-answer"
@@ -47,7 +52,7 @@
         /></a>
         <a href="./bookmarks.html"
           ><img
-            src="../../images/bookmark 20x20px.svg"
+            src="../../images/bookmark-20x20px.svg"
             height="40"
             width="40"
             alt="bookmark button"
