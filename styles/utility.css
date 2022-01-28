@@ -10,7 +10,7 @@
   height: 100vh;
 }
 
-.no-list-style[role="list"] {
+.no-list-style[role='list'] {
   list-style: none;
 }
 .classic-wrap {
@@ -21,11 +21,10 @@
 }
 .center-wrap {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 .text-center {
   text-align: center;
