@@ -3,18 +3,15 @@ export function bookmarks() {
 
   let cardIsBookmarked = false;
 
-  cardBookmark?.addEventListener('click', () => {
-    // if (!cardIsBookmarked) {
-    //   cardBookmark.src = '../../images/bookmark-20x20px.svg';
-    //   cardIsBookmarked = true;
-    // } else {
-    //   cardBookmark.src = '../../images/no-bookmark.svg';
-    //   cardIsBookmarked = false;
-    // }
+  cardBookmark.addEventListener('click', () => {
+    if (!cardIsBookmarked) {
+    cardBookmark.src = '../../images/bookmark-20x20px.svg';
+      cardIsBookmarked = true;
+    } else {
+    cardBookmark.src = '../../images/no-bookmark.svg';
+      cardIsBookmarked = false;
+    }
 
-    cardBookmark.src = cardIsBookmarked
-      ? '../../images/no-bookmark.svg'
-      : '../../images/bookmark-20x20px.svg';
-    cardIsBookmarked = !cardIsBookmarked;
+
   });
 }
