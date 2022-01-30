@@ -16,3 +16,6 @@
   height: 50px;
   width: 50px;
 }
+.nav__button--active {
+  background-color: var(--color-gold);
+}

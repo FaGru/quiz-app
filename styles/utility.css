@@ -32,3 +32,9 @@
 .hidden {
   display: none;
 }
+.column-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

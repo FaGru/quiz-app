@@ -1,6 +1,7 @@
 import Navigation from './js/Navigation.js';
 import Card from './js/Card.js';
 import Form from './js/Form.js';
+import Login from './js/Login.js';
 
 const allNavElements = document.querySelectorAll('[data-js="nav"]');
 
@@ -18,4 +19,10 @@ const allFormElements = document.querySelectorAll('[data-js="create__form"]');
 
 allFormElements.forEach(formElement => {
   Form(formElement);
+});
+
+const allLoginElements = document.querySelectorAll('[data-js="login"]');
+
+allLoginElements.forEach(loginElement => {
+  Login(loginElement);
 });

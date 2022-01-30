@@ -9,8 +9,20 @@
     <script type="module" defer src="./index.js"></script>
   </head>
   <body>
+    <section data-js="login" class="login">
+      <button data-js="login__button" class="login__button" >login</button>
+      <div data-js="login__form" class="hidden">
+      <form  class="login__form column-wrap" action="">
+        <label for="Name">Name:</label>
+        <input data-js="login__name-input" type="text">
+        <label for="Password">Password:</label>
+        <input data-js="login__password-input" type="text">
+        <button data-js="login__submit-button" class="login__submit-button">submit</button>
+      </form>
+    </div>
+    </section>
     <main data-js="home" class="text-center m-0">
-      <h1>Quiz App</h1>
+        <h1>Quiz App</h1>      
       <article data-js="card" class="card">
         <h2>Question</h2>
         <button class="card__bookmark">
@@ -271,7 +283,7 @@
     </main>
 
     <nav data-js="nav" class="nav classic-wrap">
-      <button class="nav__button" data-js="nav__home-button">
+      <button class="nav__button nav__button--active" data-js="nav__home-button">
         <img src="./images/home.svg" height="30" width="30" alt="home button" />
       </button>
       <button class="nav__button" data-js="nav__bookmark-button">

@@ -19,6 +19,10 @@ export default function Navigation(navElement) {
     pageBookmark.classList.add('hidden');
     pageCreate.classList.add('hidden');
     pageProfil.classList.add('hidden');
+    buttonHome.classList.add('nav__button--active');
+    buttonBookmark.classList.remove('nav__button--active');
+    buttonCreate.classList.remove('nav__button--active');
+    buttonProfil.classList.remove('nav__button--active');
   });
 
   buttonBookmark.addEventListener('click', () => {
@@ -26,6 +30,10 @@ export default function Navigation(navElement) {
     pageBookmark.classList.remove('hidden');
     pageCreate.classList.add('hidden');
     pageProfil.classList.add('hidden');
+    buttonHome.classList.remove('nav__button--active');
+    buttonBookmark.classList.add('nav__button--active');
+    buttonCreate.classList.remove('nav__button--active');
+    buttonProfil.classList.remove('nav__button--active');
   });
 
   buttonCreate.addEventListener('click', () => {
@@ -33,6 +41,10 @@ export default function Navigation(navElement) {
     pageBookmark.classList.add('hidden');
     pageCreate.classList.remove('hidden');
     pageProfil.classList.add('hidden');
+    buttonHome.classList.remove('nav__button--active');
+    buttonBookmark.classList.remove('nav__button--active');
+    buttonCreate.classList.add('nav__button--active');
+    buttonProfil.classList.remove('nav__button--active');
   });
 
   buttonProfil.addEventListener('click', () => {
@@ -40,5 +52,9 @@ export default function Navigation(navElement) {
     pageBookmark.classList.add('hidden');
     pageCreate.classList.add('hidden');
     pageProfil.classList.remove('hidden');
+    buttonHome.classList.remove('nav__button--active');
+    buttonBookmark.classList.remove('nav__button--active');
+    buttonCreate.classList.remove('nav__button--active');
+    buttonProfil.classList.add('nav__button--active');
   });
 }
