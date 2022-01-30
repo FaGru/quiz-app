@@ -8,7 +8,6 @@ allNavElements.forEach(navElement => {
   Navigation(navElement);
 });
 
-
 const allCardElements = document.querySelectorAll('[data-js="card"]');
 
 allCardElements.forEach(cardElement => {
