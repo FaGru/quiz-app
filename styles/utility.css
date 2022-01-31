@@ -30,7 +30,7 @@
   text-align: center;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 .column-wrap {
   display: flex;

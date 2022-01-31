@@ -26,7 +26,7 @@ export default function Login(loginElement) {
 
   submitButton.addEventListener('click', () => {
     form.classList.add('hidden');
-    if (nameInput == 'fabi' && passwordInput == 'pw') {
+    if (nameInput.value == 'fabi' && passwordInput.value == 'pw') {
       alert('Hi Fabi, schön dich zu sehen');
     } else {
       alert('User is unknown or wrong password');

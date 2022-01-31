@@ -11,17 +11,19 @@
   <body>
     <section data-js="login" class="login">
       <button data-js="login__button" class="login__button">login</button>
-      <div data-js="login__form" class="hidden">
-        <form class="login__form column-wrap" action="">
-          <label for="Name">Name:</label>
-          <input data-js="login__name-input" type="text" />
-          <label for="Password">Password:</label>
-          <input data-js="login__password-input" type="text" />
-          <button data-js="login__submit-button" class="login__submit-button">
-            submit
-          </button>
-        </form>
-      </div>
+      <form
+        data-js="login__form"
+        class="login__form column-wrap hidden"
+        action=""
+      >
+        <label for="Name">Name:</label>
+        <input data-js="login__name-input" type="text" />
+        <label for="Password">Password:</label>
+        <input data-js="login__password-input" type="text" />
+        <button data-js="login__submit-button" class="login__submit-button">
+          submit
+        </button>
+      </form>
     </section>
     <main data-js="home" class="text-center m-0">
       <h1>Quiz App</h1>
@@ -206,7 +208,7 @@
     </main>
 
     <main data-js="create" class="create text-center hidden">
-      <h1>Create a Question</h1>
+      <h1>Create</h1>
       <form
         action=""
         data-js="create__form"
