@@ -3,7 +3,7 @@
 }
 body {
   background-color: rgb(26, 26, 26);
-  color: wheat;
+  color: var(--color-gold);
   margin: 0;
 }
 h1 {

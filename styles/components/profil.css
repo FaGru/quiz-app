@@ -2,20 +2,20 @@
   margin: 0;
 }
 .profil__pic {
-  border: 2px solid wheat;
+  border: 2px solid var(--color-gold);
   border-radius: 100%;
   margin: 1em;
 }
 .profil__pic-name {
   margin: 2em;
-  border-bottom: 1px solid wheat;
+  border-bottom: 1px solid var(--color-gold);
 }
 .profil__about-me {
   margin: 2em;
-  border-bottom: 1px solid wheat;
+  border-bottom: 1px solid var(--color-gold);
 }
 .profil__skills {
-  border: 2px solid wheat;
+  border: 2px solid var(--color-gold);
   border-radius: 2em;
   margin: 1em;
 }
