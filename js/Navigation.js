@@ -11,7 +11,6 @@ export default function Navigation(navElement) {
         page.classList.add('hidden');
       });
       const currentButton = event.currentTarget.getAttribute('data-nav');
-      console.log(currentButton);
       const currentPage = document.querySelector(
         `[data-page="${currentButton}"]`
       );
