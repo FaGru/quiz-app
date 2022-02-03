@@ -5,6 +5,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  height: 100px;
   border-top: 3px solid black;
   margin-top: 2em;
   padding: 1.5rem;
@@ -16,6 +17,16 @@
   height: 50px;
   width: 50px;
 }
+.nav__button:hover {
+  transition: 0.1s;
+  width: 55px;
+  height: 55px;
+}
+.nav__button:active {
+  width: 55px;
+  height: 55px;
+}
+
 .nav__button--active {
   background-color: var(--color-gold);
 }

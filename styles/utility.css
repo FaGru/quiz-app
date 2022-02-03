@@ -1,6 +1,9 @@
 .mb-20 {
   margin-bottom: 20px !important;
 }
+.mb-120 {
+  margin-bottom: 120px;
+}
 
 .h-500 {
   height: 500px;

@@ -20,199 +20,208 @@
         <input data-js="login__name-input" type="text" />
         <label for="Password">Password:</label>
         <input data-js="login__password-input" type="text" />
-        <button data-js="login__submit-button" class="login__submit-button">
+        <button
+          data-js="login__submit-button"
+          class="login__submit-button"
+          type="button"
+        >
           submit
         </button>
       </form>
+      <output data-js="login__user-name" class="login__user-name"></output>
     </section>
-    <main data-js="home" class="text-center m-0">
+    <main data-page="home" class="mb-120">
       <h1>Quiz App</h1>
-      <article data-js="card" class="card">
-        <h2>Question</h2>
-        <button class="card__bookmark">
-          <img
-            data-js="card__bookmark"
-            src="../../images/no-bookmark.svg"
-            alt="bookmark button"
-            height="40"
-            width="40"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <details>
-          <summary data-js="card__show-answer" class="card__show-answer">
-            show answer
-          </summary>
-          <p>Lorem ipsum dolor sit amet</p>
-        </details>
-        <ul role="list" class="card__tag-list no-list-style classic-wrap">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
-        </ul>
-      </article>
-      <article data-js="card" class="card">
-        <h2>Question</h2>
-        <button class="card__bookmark">
-          <img
-            data-js="card__bookmark"
-            src="../../images/no-bookmark.svg"
-            alt="bookmark button"
-            height="40"
-            width="40"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <details>
-          <summary data-js="card__show-answer" class="card__show-answer">
-            show answer
-          </summary>
-          <p>Lorem ipsum dolor sit amet</p>
-        </details>
-        <ul role="list" class="card__tag-list no-list-style classic-wrap">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
-        </ul>
-      </article>
-      <article data-js="card" class="card">
-        <h2>Question</h2>
-        <button class="card__bookmark">
-          <img
-            data-js="card__bookmark"
-            src="../../images/no-bookmark.svg"
-            alt="bookmark button"
-            height="40"
-            width="40"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <details>
-          <summary data-js="card__show-answer" class="card__show-answer">
-            show answer
-          </summary>
-          <p>Lorem ipsum dolor sit amet</p>
-        </details>
-        <ul role="list" class="card__tag-list no-list-style classic-wrap">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
-        </ul>
-      </article>
-      <article data-js="card" class="card">
-        <h2>Question</h2>
-        <button class="card__bookmark">
-          <img
-            data-js="card__bookmark"
-            src="../../images/no-bookmark.svg"
-            alt="bookmark button"
-            height="40"
-            width="40"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <details>
-          <summary data-js="card__show-answer" class="card__show-answer">
-            show answer
-          </summary>
-          <p>Lorem ipsum dolor sit amet</p>
-        </details>
-        <ul role="list" class="card__tag-list no-list-style classic-wrap">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
-        </ul>
-      </article>
-      <article data-js="card" class="card">
-        <h2>Question</h2>
-        <button class="card__bookmark">
-          <img
-            data-js="card__bookmark"
-            src="../../images/no-bookmark.svg"
-            alt="bookmark button"
-            height="40"
-            width="40"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <details>
-          <summary data-js="card__show-answer" class="card__show-answer">
-            show answer
-          </summary>
-          <p>Lorem ipsum dolor sit amet</p>
-        </details>
-        <ul role="list" class="card__tag-list no-list-style classic-wrap">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
-        </ul>
-      </article>
+      <section class="column-wrap">
+        <article data-js="card" class="card">
+          <h2>Question</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="card__bookmark"
+              src="../../images/no-bookmark.svg"
+              alt="bookmark button"
+              height="40"
+              width="40"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+          <details>
+            <summary data-js="card__show-answer" class="card__show-answer">
+              show answer
+            </summary>
+            <p>Lorem ipsum dolor sit amet</p>
+          </details>
+          <ul role="list" class="card__tag-list no-list-style classic-wrap">
+            <li class="card__tag">tag 1</li>
+            <li class="card__tag">tag 2</li>
+            <li class="card__tag">tag 3</li>
+            <li class="card__tag">tag 4</li>
+          </ul>
+        </article>
+        <article data-js="card" class="card">
+          <h2>Question</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="card__bookmark"
+              src="../../images/no-bookmark.svg"
+              alt="bookmark button"
+              height="40"
+              width="40"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+          <details>
+            <summary data-js="card__show-answer" class="card__show-answer">
+              show answer
+            </summary>
+            <p>Lorem ipsum dolor sit amet</p>
+          </details>
+          <ul role="list" class="card__tag-list no-list-style classic-wrap">
+            <li class="card__tag">tag 1</li>
+            <li class="card__tag">tag 2</li>
+            <li class="card__tag">tag 3</li>
+            <li class="card__tag">tag 4</li>
+          </ul>
+        </article>
+        <article data-js="card" class="card">
+          <h2>Question</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="card__bookmark"
+              src="../../images/no-bookmark.svg"
+              alt="bookmark button"
+              height="40"
+              width="40"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+          <details>
+            <summary data-js="card__show-answer" class="card__show-answer">
+              show answer
+            </summary>
+            <p>Lorem ipsum dolor sit amet</p>
+          </details>
+          <ul role="list" class="card__tag-list no-list-style classic-wrap">
+            <li class="card__tag">tag 1</li>
+            <li class="card__tag">tag 2</li>
+            <li class="card__tag">tag 3</li>
+            <li class="card__tag">tag 4</li>
+          </ul>
+        </article>
+        <article data-js="card" class="card">
+          <h2>Question</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="card__bookmark"
+              src="../../images/no-bookmark.svg"
+              alt="bookmark button"
+              height="40"
+              width="40"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+          <details>
+            <summary data-js="card__show-answer" class="card__show-answer">
+              show answer
+            </summary>
+            <p>Lorem ipsum dolor sit amet</p>
+          </details>
+          <ul role="list" class="card__tag-list no-list-style classic-wrap">
+            <li class="card__tag">tag 1</li>
+            <li class="card__tag">tag 2</li>
+            <li class="card__tag">tag 3</li>
+            <li class="card__tag">tag 4</li>
+          </ul>
+        </article>
+        <article data-js="card" class="card">
+          <h2>Question</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="card__bookmark"
+              src="../../images/no-bookmark.svg"
+              alt="bookmark button"
+              height="40"
+              width="40"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+          <details>
+            <summary data-js="card__show-answer" class="card__show-answer">
+              show answer
+            </summary>
+            <p>Lorem ipsum dolor sit amet</p>
+          </details>
+          <ul role="list" class="card__tag-list no-list-style classic-wrap">
+            <li class="card__tag">tag 1</li>
+            <li class="card__tag">tag 2</li>
+            <li class="card__tag">tag 3</li>
+            <li class="card__tag">tag 4</li>
+          </ul>
+        </article>
+      </section>
     </main>
 
-    <main data-js="bookmark" class="text-center hidden">
+    <main data-page="bookmark" class="hidden mb-120">
       <h1>Bookmarks</h1>
-      <article data-js="card" class="card">
-        <h2>Question</h2>
-        <button class="card__bookmark">
-          <img
-            data-js="card__bookmark"
-            src="../../images/bookmark-20x20px.svg"
-            alt="bookmark button"
-            height="40"
-            width="40"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <details>
-          <summary data-js="card__show-answer" class="card__show-answer">
-            show answer
-          </summary>
-          <p>Lorem ipsum dolor sit amet</p>
-        </details>
-        <ul role="list" class="card__tag-list no-list-style classic-wrap">
-          <li class="card__tag">tag 1</li>
-          <li class="card__tag">tag 2</li>
-          <li class="card__tag">tag 3</li>
-          <li class="card__tag">tag 4</li>
-        </ul>
-      </article>
+      <section class="column-wrap">
+        <article data-js="card" class="card">
+          <h2>Question</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="card__bookmark"
+              src="../../images/bookmark-20x20px.svg"
+              alt="bookmark button"
+              height="40"
+              width="40"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+          <details>
+            <summary data-js="card__show-answer" class="card__show-answer">
+              show answer
+            </summary>
+            <p>Lorem ipsum dolor sit amet</p>
+          </details>
+          <ul role="list" class="card__tag-list no-list-style classic-wrap">
+            <li class="card__tag">tag 1</li>
+            <li class="card__tag">tag 2</li>
+            <li class="card__tag">tag 3</li>
+            <li class="card__tag">tag 4</li>
+          </ul>
+        </article>
+      </section>
     </main>
 
-    <main data-js="create" class="create text-center hidden">
+    <main data-page="create" class="create hidden mb-120">
       <h1>Create</h1>
       <form
         action=""
         data-js="create__form"
-        class="app-grid__scrollarea h-100vh"
+        class="app-grid__scrollarea text-center h-100vh"
         autocomplete="off"
       >
         <section class="create__section-wrap">
@@ -251,7 +260,7 @@
       </form>
     </main>
 
-    <main data-js="profil" class="profil text-center hidden">
+    <main data-page="profil" class="profil hidden mb-120">
       <h1>My Profile</h1>
       <section>
         <figure class="center-wrap profil__pic-name">
@@ -265,7 +274,7 @@
           <figcaption>Fabian Gruber</figcaption>
         </figure>
       </section>
-      <section class="profil__about-me">
+      <section class="profil__about-me text-center">
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -274,7 +283,7 @@
           ipsum dolor sit amet.
         </p>
       </section>
-      <section class="profil__skills">
+      <section class="profil__skills text-center">
         <h2>My Sklills</h2>
         <ul role="list" class="profil__tag-list no-list-style classic-wrap">
           <li class="profil__tag">tag 1</li>
@@ -287,13 +296,10 @@
     </main>
 
     <nav data-js="nav" class="nav classic-wrap">
-      <button
-        class="nav__button nav__button--active"
-        data-js="nav__home-button"
-      >
+      <button class="nav__button nav__button--active" data-nav="home">
         <img src="./images/home.svg" height="30" width="30" alt="home button" />
       </button>
-      <button class="nav__button" data-js="nav__bookmark-button">
+      <button class="nav__button" data-nav="bookmark">
         <img
           src="./images/bookmark-20x20px.svg"
           height="30"
@@ -301,7 +307,7 @@
           alt="bookmark button"
         />
       </button>
-      <button class="nav__button" data-js="nav__create-button">
+      <button class="nav__button" data-nav="create">
         <img
           src="./images/create.svg"
           height="30"
@@ -309,7 +315,7 @@
           alt="create button"
         />
       </button>
-      <button class="nav__button" data-js="nav__profil-button">
+      <button class="nav__button" data-nav="profil">
         <img
           src="./images/profil.svg"
           height="30"

@@ -8,28 +8,34 @@ export default function Login(loginElement) {
   const passwordInput = loginElement.querySelector(
     '[data-js="login__password-input"]'
   );
+  const loggedinUser = loginElement.querySelector(
+    '[data-js="login__user-name"]'
+  );
+
+  // login nur fabi
 
   let isUserLoggedIn = false;
 
   loginButton.addEventListener('click', () => {
     if (!isUserLoggedIn) {
       alert('Welcome pls enter name and password');
-      loginButton.textContent = 'Logout';
       form.classList.remove('hidden');
-      isUserLoggedIn = true;
+      submitButton.addEventListener('click', () => {
+        form.classList.add('hidden');
+        if (nameInput.value == 'fabi' && passwordInput.value == 'pw') {
+          alert('Hi Fabi, schön dich zu sehen');
+          loginButton.textContent = 'Logout';
+          loggedinUser.value = 'logged in: Fabian Gruber';
+          isUserLoggedIn = true;
+        } else {
+          alert('User is unknown or wrong password');
+        }
+      });
     } else {
       alert('Bye bye');
       loginButton.textContent = 'Login';
       isUserLoggedIn = false;
-    }
-  });
-
-  submitButton.addEventListener('click', () => {
-    form.classList.add('hidden');
-    if (nameInput.value == 'fabi' && passwordInput.value == 'pw') {
-      alert('Hi Fabi, schön dich zu sehen');
-    } else {
-      alert('User is unknown or wrong password');
+      loggedinUser.value = '';
     }
   });
 }

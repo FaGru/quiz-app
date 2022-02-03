@@ -5,6 +5,7 @@
 }
 .login__button {
   position: absolute;
+  cursor: pointer;
   right: 10px;
   bottom: -42px;
   border: 3px solid black;
@@ -23,9 +24,10 @@
 }
 .login__form {
   position: absolute;
-  left: 150px;
-  right: 150px;
-  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50px;
   min-width: 200px;
   background-color: black;
   border: 1px solid var(--color-gold);
@@ -36,4 +38,12 @@
 }
 .login__submit-button {
   margin: 1em;
+  cursor: pointer;
+}
+.login__user-name {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 55px;
 }
