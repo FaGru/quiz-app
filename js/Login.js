@@ -12,6 +12,8 @@ export default function Login(loginElement) {
     '[data-js="login__user-name"]'
   );
 
+  // login nur fabi
+
   let isUserLoggedIn = false;
 
   loginButton.addEventListener('click', () => {

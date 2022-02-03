@@ -5,7 +5,7 @@
   border-radius: 1em;
   padding: 0.5em;
   text-align: center;
-  box-shadow: 1px 1px 1px var(--color-gold);
+  box-shadow: 0.5px 0.5px 1px var(--color-gold);
   max-width: 25rem;
   height: auto;
   margin: 1em;
