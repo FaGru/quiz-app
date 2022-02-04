@@ -1,4 +1,4 @@
-export function createCard() {
+export default function CreateCard(createCardElement) {
   const cardContainer = document.querySelector('[data-js="Card_Container"]');
   const form = document.querySelector('[data-js="create__form"]');
 

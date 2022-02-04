@@ -1,8 +1,16 @@
+import CreateCard from './js/CreateCard.js';
 import Navigation from './js/Navigation.js';
 import Card from './js/Card.js';
 import Form from './js/Form.js';
 import Login from './js/Login.js';
-import { createCard } from './js/createCard.js';
+
+const allCreateCardElements = document.querySelectorAll(
+  '[data-js="Card_Container"]'
+);
+
+allCreateCardElements.forEach(createCardElement => {
+  CreateCard(createCardElement);
+});
 
 const allNavElements = document.querySelectorAll('[data-js="nav"]');
 
@@ -28,7 +36,6 @@ allLoginElements.forEach(loginElement => {
   Login(loginElement);
 });
 
-createCard();
 // const allCreateCardElements = document.querySelectorAll('[data-js="create-cards"]');
 
 // allCreateCardElements.forEach(createCardElement => {
