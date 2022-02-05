@@ -1,16 +1,23 @@
-import CreateCard from './js/CreateCard.js';
+import CreateQuizCard from './js/CreateQuizCard.js';
 import Navigation from './js/Navigation.js';
 import Card from './js/Card.js';
 import Form from './js/Form.js';
 import Login from './js/Login.js';
 console.clear();
 
-const allCreateCardElements = document.querySelectorAll(
+// const allCreateCardElements = document.querySelectorAll(
+//   '[data-js="Card_Container"]'
+// );
+
+// allCreateCardElements.forEach(createCardElement => {
+//   CreateCard(createCardElement);
+// });
+const allCreateQuizCardElements = document.querySelectorAll(
   '[data-js="Card_Container"]'
 );
 
-allCreateCardElements.forEach(createCardElement => {
-  CreateCard(createCardElement);
+allCreateQuizCardElements.forEach(() => {
+  CreateQuizCard();
 });
 
 const allNavElements = document.querySelectorAll('[data-js="nav"]');
