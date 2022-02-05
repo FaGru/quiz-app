@@ -61,7 +61,6 @@ export default function CreateCard(createCardElement) {
            
           </ul>`;
       cardContainer.append(finishedCard);
-      console.clear();
     });
   }
 }

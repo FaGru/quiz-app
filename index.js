@@ -3,6 +3,7 @@ import Navigation from './js/Navigation.js';
 import Card from './js/Card.js';
 import Form from './js/Form.js';
 import Login from './js/Login.js';
+console.clear();
 
 const allCreateCardElements = document.querySelectorAll(
   '[data-js="Card_Container"]'
